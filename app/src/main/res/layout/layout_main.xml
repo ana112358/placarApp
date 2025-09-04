@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.seu.pacote">
+    tools:context="com.example.placarapp.">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Time A"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif"/>
 
             <TextView
@@ -41,14 +41,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="+3 PONTOS" />
+                android:text="+3 PONTOS"
+                android:backgroundTint="#0ca6df"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"/>
 
             <Button
                 android:id="@+id/doisPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="+2 PONTOS" />
+                android:text="+2 PONTOS"
+                android:backgroundTint="#0ca6df"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"/>
 
             <Button
                 android:id="@+id/tiroLivreA"
@@ -77,7 +83,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Time B"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif"/>
 
             <TextView
@@ -95,14 +101,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="+3 PONTOS" />
+                android:text="+3 PONTOS"
+                android:backgroundTint="#0ca6df"
+                android:textColor="#FFFFFF"
+                android:padding="5dp" />
 
             <Button
                 android:id="@+id/doisPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="+2 PONTOS" />
+                android:text="+2 PONTOS"
+                android:backgroundTint="#0ca6df"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"/>
 
             <Button
                 android:id="@+id/tiroLivreB"
@@ -121,5 +133,8 @@
         android:text="Reiniciar Partida"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"/>
+        android:layout_margin="32dp"
+        android:backgroundTint="#0ca6df"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
 </RelativeLayout>
