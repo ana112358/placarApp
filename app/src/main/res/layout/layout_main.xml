@@ -3,27 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#1a1a1a"
     tools:context="com.example.placarapp.">
 
-    <LinearLayout
+    <!-- Header com título -->
+    <TextView
+        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:background="#0490d4"
+        android:text="PLACAR DE BASQUETE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true" />
 
+    <!-- Container principal dos times -->
+    <LinearLayout
+        android:id="@+id/containerTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- TIME A -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_margin="8dp"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/timeA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
-                android:text="Time A"
-                android:textSize="20sp"
+                android:padding="8dp"
+                android:text="TIME A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0490d4"
                 android:fontFamily="sans-serif"/>
 
             <TextView
@@ -31,59 +56,75 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="4dp"
+                android:padding="8dp"
                 android:text="0"
-                android:textSize="54sp"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif"/>
 
             <Button
                 android:id="@+id/tresPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="4dp"
                 android:text="+3 PONTOS"
-                android:backgroundTint="#0ca6df"
+                android:backgroundTint="#0490d4"
                 android:textColor="#FFFFFF"
-                android:padding="5dp"/>
+                android:textStyle="bold"
+                android:padding="12dp"/>
 
             <Button
                 android:id="@+id/doisPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="4dp"
                 android:text="+2 PONTOS"
-                android:backgroundTint="#0ca6df"
+                android:backgroundTint="#0490d4"
                 android:textColor="#FFFFFF"
-                android:padding="5dp"/>
+                android:textStyle="bold"
+                android:padding="12dp"/>
 
             <Button
                 android:id="@+id/tiroLivreA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Tiro Livre" />
+                android:layout_margin="4dp"
+                android:text="LANCE LIVRE"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="12dp"/>
+
         </LinearLayout>
 
+        <!-- Linha divisória -->
         <View
-            android:layout_width="1dp"
+            android:layout_width="2dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"
-            android:layout_marginTop="16dp"/>
+            android:background="#FFFFFF"
+            android:layout_marginVertical="24dp"/>
 
+        <!-- TIME B -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#2a2a2a"
+            android:layout_margin="8dp"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/timeB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
-                android:text="Time B"
-                android:textSize="20sp"
+                android:padding="8dp"
+                android:text="TIME B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF6600"
                 android:fontFamily="sans-serif"/>
 
             <TextView
@@ -91,50 +132,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="4dp"
+                android:padding="8dp"
                 android:text="0"
-                android:textSize="54sp"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif"/>
 
             <Button
                 android:id="@+id/tresPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="4dp"
                 android:text="+3 PONTOS"
-                android:backgroundTint="#0ca6df"
+                android:backgroundTint="#FF6600"
                 android:textColor="#FFFFFF"
-                android:padding="5dp" />
+                android:textStyle="bold"
+                android:padding="12dp" />
 
             <Button
                 android:id="@+id/doisPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="4dp"
                 android:text="+2 PONTOS"
-                android:backgroundTint="#0ca6df"
+                android:backgroundTint="#FF6600"
                 android:textColor="#FFFFFF"
-                android:padding="5dp"/>
+                android:textStyle="bold"
+                android:padding="12dp"/>
 
             <Button
                 android:id="@+id/tiroLivreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Tiro Livre" />
-        </LinearLayout>
+                android:layout_margin="4dp"
+                android:text="LANCE LIVRE"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="12dp"/>
 
+        </LinearLayout>
     </LinearLayout>
 
+    <!-- Botão de reiniciar -->
     <Button
         android:id="@+id/reiniciarPartida"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reiniciar Partida"
+        android:text="REINICIAR PARTIDA"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
-        android:backgroundTint="#0ca6df"
+        android:layout_margin="16dp"
+        android:backgroundTint="#333333"
         android:textColor="#FFFFFF"
-        android:padding="16dp"/>
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
 </RelativeLayout>
