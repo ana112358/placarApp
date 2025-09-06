@@ -96,12 +96,12 @@ class MainActivity : ComponentActivity() {
         if (time == "A") {
             faltasTimeA++
             if (faltasTimeA >= 5) {
-                Toast.makeText(this, "⚠️ Time Casa: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "⚠️ Time A: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
             }
         } else {
             faltasTimeB++
             if (faltasTimeB >= 5) {
-                Toast.makeText(this, "⚠️ Time Visitante: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "⚠️ Time B: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
             }
         }
 
