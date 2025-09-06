@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0490d4"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="38dp"
         android:text="PLACAR DE BASQUETE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -249,7 +249,7 @@
     <ScrollView
         android:id="@+id/scrollHistorico"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="160dp"
         android:layout_above="@id/reiniciarPartida"
         android:layout_margin="8dp"
         android:background="#222222">
