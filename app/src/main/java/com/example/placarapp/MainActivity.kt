@@ -72,10 +72,8 @@ class MainActivity : ComponentActivity() {
     fun adicionarPontos(pontos: Int, time: String) {
         if (time == "A") {
             pontuacaoTimeA += pontos
-            animarPlacar(pTimeA)
         } else {
             pontuacaoTimeB += pontos
-            animarPlacar(pTimeB)
         }
 
         atualizarTodosDisplays()
@@ -98,25 +96,12 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    fun animarPlacar(textView: TextView) {
-        textView.animate()
-            .scaleX(1.3f)
-            .scaleY(1.3f)
-            .setDuration(200)
-            .withEndAction {
-                textView.animate()
-                    .scaleX(1.0f)
-                    .scaleY(1.0f)
-                    .setDuration(200)
-            }
-    }
-
     fun reiniciarPartida() {
         pontuacaoTimeA = 0
         pontuacaoTimeB = 0
 
         atualizarTodosDisplays()
 
-        Toast.makeText(this, "🏀 Placar reiniciado!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Placar reiniciado!", Toast.LENGTH_SHORT).show()
     }
 }
