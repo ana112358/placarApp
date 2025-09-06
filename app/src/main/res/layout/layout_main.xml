@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0490d4"
+        android:layout_marginTop="32dp"
         android:text="PLACAR DE BASQUETE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -35,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#2a2a2a"
+            android:background="@drawable/background_rounded_times"
             android:layout_margin="8dp"
             android:padding="16dp">
 
@@ -46,7 +47,7 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:text="TIME A"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#0490d4"
                 android:fontFamily="sans-serif"/>
@@ -70,7 +71,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="Faltas: 0"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:textColor="#CCCCCC"
                 android:fontFamily="sans-serif"/>
 
@@ -78,45 +79,57 @@
                 android:id="@+id/tresPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="+3 PONTOS"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#0490d4"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/doisPontosA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="+2 PONTOS"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#0490d4"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/tiroLivreA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="LANCE LIVRE"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#4CAF50"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/faltaTimeA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
                 android:text="⚠️ FALTA"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#F44336"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
 
         </LinearLayout>
@@ -126,7 +139,7 @@
             android:layout_width="2dp"
             android:layout_height="match_parent"
             android:background="#FFFFFF"
-            android:layout_marginVertical="24dp"/>
+            android:layout_marginVertical="8dp"/>
 
         <!-- TIME B -->
         <LinearLayout
@@ -134,7 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#2a2a2a"
+            android:background="@drawable/background_rounded_times"
             android:layout_margin="8dp"
             android:padding="16dp">
 
@@ -145,7 +158,7 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:text="TIME B"
-                android:textSize="18sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#FF6600"
                 android:fontFamily="sans-serif"/>
@@ -169,7 +182,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="Faltas: 0"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:textColor="#CCCCCC"
                 android:fontFamily="sans-serif"/>
 
@@ -177,45 +190,57 @@
                 android:id="@+id/tresPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="+3 PONTOS"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#FF6600"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp" />
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/doisPontosB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="+2 PONTOS"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#FF6600"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/tiroLivreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="LANCE LIVRE"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#4CAF50"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
             <Button
                 android:id="@+id/faltaTimeB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
                 android:text="⚠️ FALTA"
+                android:background="@drawable/rounded_button"
                 android:backgroundTint="#F44336"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:padding="12dp"/>
+                android:textSize="16sp"
+                />
 
         </LinearLayout>
     </LinearLayout>
@@ -246,6 +271,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"
         android:backgroundTint="#333333"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
