@@ -23,6 +23,9 @@ class MainActivity : ComponentActivity() {
     private lateinit var pTimeA: TextView
     private lateinit var pTimeB: TextView
 
+    private lateinit var faltasA: TextView
+    private lateinit var faltasB: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_main)
@@ -30,15 +33,19 @@ class MainActivity : ComponentActivity() {
         // INICIALIZAÇÃO DOS TEXTVIEWS
         pTimeA = findViewById(R.id.placarTimeA)
         pTimeB = findViewById(R.id.placarTimeB)
+        faltasA = findViewById(R.id.faltasTimeA)
+        faltasB = findViewById(R.id.faltasTimeB)
 
         // INICIALIZAÇÃO DOS BOTÕES
         val bTresPontosTimeA: Button = findViewById(R.id.tresPontosA)
         val bDoisPontosTimeA: Button = findViewById(R.id.doisPontosA)
         val bTLivreTimeA: Button = findViewById(R.id.tiroLivreA)
+        val bFaltaTimeA: Button = findViewById(R.id.faltaTimeA)
 
         val bTresPontosTimeB: Button = findViewById(R.id.tresPontosB)
         val bDoisPontosTimeB: Button = findViewById(R.id.doisPontosB)
         val bTLivreTimeB: Button = findViewById(R.id.tiroLivreB)
+        val bFaltaTimeB: Button = findViewById(R.id.faltaTimeB)
 
         val bReiniciar: Button = findViewById(R.id.reiniciarPartida)
 
@@ -52,6 +59,9 @@ class MainActivity : ComponentActivity() {
         bTLivreTimeA.setOnClickListener {
             adicionarPontos(1, "A")
         }
+        bFaltaTimeA.setOnClickListener {
+            adicionarFalta("A")
+        }
 
         bTresPontosTimeB.setOnClickListener {
             adicionarPontos(3, "B")
@@ -61,6 +71,9 @@ class MainActivity : ComponentActivity() {
         }
         bTLivreTimeB.setOnClickListener {
             adicionarPontos(1, "B")
+        }
+        bFaltaTimeB.setOnClickListener {
+            adicionarFalta("B")
         }
 
         bReiniciar.setOnClickListener { reiniciarPartida() }
@@ -79,9 +92,27 @@ class MainActivity : ComponentActivity() {
         atualizarTodosDisplays()
     }
 
+    fun adicionarFalta(time: String) {
+        if (time == "A") {
+            faltasTimeA++
+            if (faltasTimeA >= 5) {
+                Toast.makeText(this, "⚠️ Time Casa: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
+            }
+        } else {
+            faltasTimeB++
+            if (faltasTimeB >= 5) {
+                Toast.makeText(this, "⚠️ Time Visitante: Limite de faltas atingido!", Toast.LENGTH_LONG).show()
+            }
+        }
+
+        atualizarTodosDisplays()
+    }
+
     fun atualizarTodosDisplays() {
         pTimeA.text = pontuacaoTimeA.toString()
         pTimeB.text = pontuacaoTimeB.toString()
+        faltasA.text = "Faltas: $faltasTimeA"
+        faltasB.text = "Faltas: $faltasTimeB"
 
         // Destacar time que está ganhando
         if (pontuacaoTimeA > pontuacaoTimeB) {
@@ -99,6 +130,8 @@ class MainActivity : ComponentActivity() {
     fun reiniciarPartida() {
         pontuacaoTimeA = 0
         pontuacaoTimeB = 0
+        faltasTimeA = 0
+        faltasTimeB = 0
 
         atualizarTodosDisplays()
 

@@ -63,6 +63,17 @@
                 android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif"/>
 
+            <TextView
+                android:id="@+id/faltasTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Faltas: 0"
+                android:textSize="14sp"
+                android:textColor="#CCCCCC"
+                android:fontFamily="sans-serif"/>
+
             <Button
                 android:id="@+id/tresPontosA"
                 android:layout_width="match_parent"
@@ -95,6 +106,18 @@
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/faltaTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="⚠️ FALTA"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="12dp"/>
+
 
         </LinearLayout>
 
@@ -139,6 +162,17 @@
                 android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif"/>
 
+            <TextView
+                android:id="@+id/faltasTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Faltas: 0"
+                android:textSize="14sp"
+                android:textColor="#CCCCCC"
+                android:fontFamily="sans-serif"/>
+
             <Button
                 android:id="@+id/tresPontosB"
                 android:layout_width="match_parent"
@@ -168,6 +202,17 @@
                 android:layout_margin="4dp"
                 android:text="LANCE LIVRE"
                 android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:padding="12dp"/>
+
+            <Button
+                android:id="@+id/faltaTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="⚠️ FALTA"
+                android:backgroundTint="#F44336"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:padding="12dp"/>
