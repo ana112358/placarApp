@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Widget.PlacarApp.Button" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/cantata_one</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
