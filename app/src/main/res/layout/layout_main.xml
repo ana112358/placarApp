@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0490d4"
-        android:layout_marginTop="38dp"
+
         android:text="PLACAR DE BASQUETE"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -246,11 +246,13 @@
     </LinearLayout>
 
     <!-- Histórico de eventos -->
+    <!-- Histórico de eventos -->
     <ScrollView
         android:id="@+id/scrollHistorico"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="0dp"
         android:layout_above="@id/reiniciarPartida"
+        android:layout_below="@id/containerTimes"
         android:layout_margin="8dp"
         android:background="#222222">
 
@@ -261,6 +263,7 @@
             android:orientation="vertical"
             android:padding="8dp" />
     </ScrollView>
+
 
     <!-- Botão de reiniciar -->
     <Button
